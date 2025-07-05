@@ -1,0 +1,53 @@
+@use '../../styles/variables.scss' as v;
+
+.how {
+  background: v.$gray-bg;
+  padding: 4rem 0 3rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step {
+  background: v.$white;
+  border-radius: 1.2rem;
+  box-shadow: v.$card-shadow;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: v.$primary-blue;
+}
+
+.stepTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stepDesc {
+  color: #444;
+  font-size: 1rem;
+} 

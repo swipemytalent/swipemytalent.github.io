@@ -1,0 +1,41 @@
+@use '../../styles/variables.scss' as v;
+
+.ctaSection {
+  background: v.$primary-blue;
+  color: v.$white;
+  padding: 4rem 0 3rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: v.$white;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+
+.ctaBtn {
+  background: v.$white;
+  color: v.$primary-blue;
+  border-radius: 999px;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background: v.$primary-orange;
+    color: v.$white;
+    transform: translateY(-2px) scale(1.03);
+  }
+} 

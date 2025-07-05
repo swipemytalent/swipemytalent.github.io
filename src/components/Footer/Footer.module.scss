@@ -1,0 +1,64 @@
+@use '../../styles/variables.scss' as v;
+
+.footer {
+  background: v.$white;
+  border-top: 1px solid #e0e0e0;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: v.$primary-blue;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  a {
+    color: v.$primary-blue;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.85;
+    &:hover {
+      color: v.$primary-orange;
+      opacity: 1;
+    }
+  }
+}
+
+.mission {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.7rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.7rem;
+  a {
+    color: v.$primary-blue;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.85;
+    &:hover {
+      color: v.$primary-orange;
+      opacity: 1;
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 0.5rem;
+} 

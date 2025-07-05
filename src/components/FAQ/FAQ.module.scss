@@ -1,0 +1,52 @@
+@use '../../styles/variables.scss' as v;
+
+.faq {
+  background: v.$gray-bg;
+  padding: 4rem 0 3rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  background: v.$white;
+  border-radius: 1.2rem;
+  box-shadow: v.$card-shadow;
+  padding: 2rem 1.5rem;
+}
+
+.q {
+  font-weight: 700;
+  color: v.$primary-blue;
+  margin-bottom: 0.5rem;
+}
+
+.a {
+  color: #444;
+  font-size: 1rem;
+}
+
+.blue {
+  color: #1976d2;
+}
+.orange {
+  color: #ff9800;
+} 

@@ -1,0 +1,73 @@
+@use '../../styles/variables.scss' as v;
+
+.features {
+  background: v.$white;
+  padding: 4rem 0 3rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  .blue { color: v.$primary-blue; }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: v.$gray-bg;
+  border-radius: 1.2rem;
+  box-shadow: v.$card-shadow;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  &:hover {
+    box-shadow: 0 8px 24px rgba(25, 118, 210, 0.13);
+    transform: translateY(-4px) scale(1.03);
+  }
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: v.$primary-orange;
+  margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+  color: #444;
+  font-size: 1rem;
+}
+
+.cardMini {
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.blue {
+  color: #1976d2;
+}
+.orange {
+  color: #ff9800;
+} 

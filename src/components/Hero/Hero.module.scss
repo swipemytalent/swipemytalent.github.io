@@ -1,0 +1,92 @@
+@use '../../styles/variables.scss' as v;
+
+.blue { color: v.$primary-blue; }
+.orange { color: v.$primary-orange; }
+
+.hero {
+  background: v.$gray-bg;
+  padding: 4rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cta {
+  background: v.$primary-blue;
+  color: v.$white;
+  border-radius: 999px;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background: v.$primary-orange;
+    color: v.$white;
+    transform: translateY(-2px) scale(1.03);
+  }
+}
+
+.baseline {
+  font-size: 1rem;
+  color: #1976d2;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.7rem;
+}
+
+.identification {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ctaSecondary {
+  background: transparent;
+  color: v.$primary-blue;
+  border: 2px solid v.$primary-blue;
+  border-radius: 999px;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background: v.$primary-blue;
+    color: v.$white;
+    border-color: v.$primary-orange;
+    transform: translateY(-2px) scale(1.03);
+  }
+} 

@@ -46,7 +46,7 @@ export default function TargetAudience() {
       <div className={styles.desc}>Développeur, designer, product manager, data analyst, DevOps ou tout autre profil tech : SwipeMyTalent t’aide à progresser, échanger et collaborer entre pairs du digital.</div>
       <div className={styles.actions}>
         <a href="https://swipemytalent.com/talents" target="_blank" rel="noopener noreferrer" className={styles.cta}>Rejoindre la plateforme</a>
-        <a href="#how" className={styles.ctaSecondary}>Voir comment ça marche</a>
+        <a href="https://discord.gg/ZWuuhBmg" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Rejoindre la communauté</a>
       </div>
       <div className={styles.grid}>
         {cards.map((c, i) => (

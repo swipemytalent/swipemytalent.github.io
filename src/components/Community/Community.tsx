@@ -49,12 +49,12 @@ const Community = () => {
             ))}
           </div>
           <a
-            href="https://discord.gg/TON_LIEN_DISCORD"
+            href="https://discord.gg/ZWuuhBmg"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaBtn}
           >
-            Rejoignez-nous sur Discord
+            Rejoindre la communauté
           </a>
         </div>
       </div>

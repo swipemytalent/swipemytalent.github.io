@@ -1,5 +1,5 @@
 import styles from './Header.module.scss';
-import logoSMT from '../../assets/Logo-SMT (2).webp';
+import logoSMT from "../../assets/Logo-SMT.webp";
 
 const Header = () => (
   <header className={styles.header}>

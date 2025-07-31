@@ -35,7 +35,7 @@ const Community = () => {
           <div className={styles.badge}>Bêta ouverte</div>
           <div className={styles.title}>Une communauté en pleine éclosion</div>
           <div className={styles.desc}>
-            SwipeMyTalent, c’est déjà 34 talents inscrits (freelances, développeurs, créatifs...).<br />
+            SwipeMyTalent, c’est déjà 16 talents inscrits (freelances, développeurs, créatifs...).<br />
             Nous construisons ensemble un espace d’entraide, d’échanges et de collaboration.
           </div>
           <div className={styles.counter}><span className={styles.counterNumber}>{count}</span> membres déjà inscrits</div>
